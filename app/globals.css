@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.embla {
+  position: relative;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  position: relative;
+  height: 500px; /* Imposta l'altezza delle slide in base all'altezza delle tue immagini */
+}
+
+.embla__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.embla__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.embla__dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.embla__dot {
+  width: 1em;
+  height: 1em;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  margin: 0 0.5em;
+  cursor: pointer;
+}
+
+.embla__dot.is-selected {
+  background: gray;
+}

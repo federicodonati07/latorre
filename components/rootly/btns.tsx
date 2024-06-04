@@ -6,28 +6,28 @@ import { IoHomeOutline } from "react-icons/io5";
 
 const Btns = ({title, index}) => {
 
-  if(index == 0){
+  if(index == 0){ // HOME
     return (
     <div className='transition-all duration-500 ease-in-out group border border-slate-50 rounded-full p-3 cursor-pointer flex flex-row items-center justify-center absolute top-0 m-5 sm:m-20 hover:outline outline-1 outline-slate-50 outline-offset-4 hover:bg-slate-50 hover:shadow-slate-50 shadow-lg'>
         <IoHomeOutline className='transition-all duration-500 ease-in-out text-slate-50 text-2xl group-hover:text-stone-900'/>
         <h1 className="transition-all duration-500 ease-in-out text-slate-50 font-bold tracking-widest group-hover:text-stone-900">{title}</h1>
     </div>
     )
-  }else if(index == 1){
+  }else if(index == 1){ // CHI SIAMO
     return(
       <div className='transition-all duration-500 ease-in-out group border border-slate-50 rounded-full p-3 cursor-pointer flex flex-row items-center justify-center absolute top-0 m-5 sm:m-20 hover:outline outline-1 outline-slate-50 outline-offset-4 hover:bg-slate-50 hover:shadow-slate-50 shadow-lg'>
           <FaRegAddressCard className='transition-all duration-500 ease-in-out text-slate-50 text-2xl group-hover:text-stone-900'/>
           <h1 className="transition-all duration-500 ease-in-out text-slate-50 font-bold tracking-widest group-hover:text-stone-900">{title}</h1>
       </div>
     )
-  }else if(index == 2){
+  }else if(index == 2){ // PREZZI
     return(
       <div className='transition-all duration-500 ease-in-out group border border-slate-50 rounded-full p-3 cursor-pointer flex flex-row items-center justify-center absolute top-0 m-5 sm:m-20 hover:outline outline-1 outline-slate-50 outline-offset-4 hover:bg-slate-50 hover:shadow-slate-50 shadow-lg'>
           <IoPricetagsOutline className='transition-all duration-500 ease-in-out text-slate-50 text-2xl group-hover:text-stone-900'/>
           <h1 className="transition-all duration-500 ease-in-out text-slate-50 font-bold tracking-widest group-hover:text-stone-900">{title}</h1>
       </div>
     )
-  }else if(index == 3){
+  }else if(index == 3){ // DOVE
     return(
       <div className='transition-all duration-500 ease-in-out group border border-slate-50 rounded-full p-3 cursor-pointer flex flex-row items-center justify-center absolute top-0 m-5 sm:m-20 hover:outline outline-1 outline-slate-50 outline-offset-4 hover:bg-slate-50 hover:shadow-slate-50 shadow-lg'>
           <CiLocationOn className='transition-all duration-500 ease-in-out text-slate-50 text-2xl group-hover:text-stone-900'/>
