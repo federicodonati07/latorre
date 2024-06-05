@@ -8,7 +8,7 @@ import Link from 'next/link';
 import Btns from '../rootly/btns';
 
 const EmblaCarousel: React.FC = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 

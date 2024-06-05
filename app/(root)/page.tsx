@@ -48,7 +48,7 @@ const Home = () => {
               STABILIMENTO BALNEARE
             </h1>
           </div>
-          <div className='animate-bounce transition-all duration-500 ease-in-out group border border-slate-50 rounded-full p-3 cursor-pointer flex flex-col items-center justify-center absolute bottom-0 m-20 hover:outline outline-1 outline-slate-50 outline-offset-4 hover:bg-slate-50 hover:shadow-slate-50 shadow-lg'>
+          <div className='animate-bounce transition-all duration-500 ease-in-out group border border-slate-50 rounded-full p-3 cursor-pointer flex flex-col items-center justify-center absolute bottom-0 m-10 sm:m-20 hover:outline outline-1 outline-slate-50 outline-offset-4 hover:bg-slate-50 hover:shadow-slate-50 shadow-lg'>
                 <h1 className='transition-all duration-500 ease-in-out text-slate-50 font-bold tracking-widest group-hover:text-stone-900'>Scopri di più</h1>
                 <CiSaveDown1 className='transition-all duration-500 ease-in-out text-2xl text-slate-50 group-hover:text-stone-900'/>
           </div>

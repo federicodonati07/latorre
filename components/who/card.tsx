@@ -5,7 +5,7 @@ import { HiOutlineExternalLink } from 'react-icons/hi';
 import { FaRegCopy } from "react-icons/fa";
 
 
-const Card = ({ title, desc }) => {
+const Card = ({ title, desc, url }) => {
   const h1Ref = useRef(null);
   const [copied, setCopied] = useState(false);
 
@@ -39,7 +39,7 @@ const Card = ({ title, desc }) => {
             className="text-2xl cursor-pointer group-hover:text-stone-900"
           />
         )}
-        <HiOutlineExternalLink className="text-2xl cursor-pointer group-hover:text-stone-900" />
+        <a href={url}><HiOutlineExternalLink className="text-2xl cursor-pointer group-hover:text-stone-900" /></a>
       </div>
       <h1 className="text-2xl tracking-widest font-extrabold group-hover:text-stone-900">{title}</h1>
       <h1 ref={h1Ref} className="font-bold group-hover:text-stone-900">{desc}</h1>

@@ -29,10 +29,9 @@ const Where = () => {
         </div>
         <div className='sm:absolute bottom-0 inset-x-0 flex items-center justify-center mb-10'>
           <div id="card-link" className="cards grid grid-flow-row sm:grid-flow-col gap-4 text-center">
-            
-            <Card title="Email" desc="piccolienzo48@gmail.com"/>
-            <Card title="Numero" desc="+39 3384329261"/>
-            <Card title="Fisso" desc="+39 06 9822749" />
+            <Card title="Numero" desc="+39 3384329261" url="tel:+393384329261"/>
+            <Card title="Email" desc="piccolienzo48@gmail.com" url="mailto:piccolienzo48@gmail.com"/>
+            <Card title="Fisso" desc="+39 06 9822749" url="tel:+39069822749"/>
           </div>
         </div>
       </div>
