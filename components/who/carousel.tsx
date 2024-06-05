@@ -8,7 +8,7 @@ import Link from 'next/link';
 import Btns from '../rootly/btns';
 
 const EmblaCarousel: React.FC = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
@@ -41,7 +41,7 @@ const EmblaCarousel: React.FC = () => {
               ombrelloni,<br/>
               bar/ristorante.<br/>
             </div>
-            <div className='absolute inset-0 my-20'>
+            <div className='absolute mx-52 sm:mx-0 inset-0 sm:my-52 md:my-20'>
               <Link href="/book" className=''><Btns title="Scopri i prezzi" index="2"></Btns></Link>
             </div>
           </div>
@@ -51,7 +51,7 @@ const EmblaCarousel: React.FC = () => {
               Nelle vicinanze potrai scorgere una torre. <br/>
               La torre di Lavinio della riserva naturale che affaccia al mare.
             </div>
-            <div className='absolute inset-0 my-20'>
+            <div className='absolute mx-52 sm:mx-0 inset-0 sm:my-20'>
               <Link href="/where" className=''><Btns title="Scopri dove" index="3"></Btns></Link>
             </div>
           </div>
