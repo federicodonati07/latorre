@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.0.4",
+    "@heroicons/react": "^2.1.3",
     "@react-google-maps/api": "^2.19.3",
+    "appwrite": "^15.0.0",
     "embla-carousel-autoplay": "^8.1.3",
     "embla-carousel-react": "^8.1.3",
     "leaflet": "^1.9.4",
